@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 #Read SECRET_KEY from secret_key.txt under "profiles_project folder"
 SECRET_KEY_FILE = 'secret_key.txt'
-SECRET_KEY_PATH = os.path.join('profiles_project', SECRET_KEY_FILE)
+SECRET_KEY_PATH = os.path.join('app', SECRET_KEY_FILE)
 with open(SECRET_KEY_PATH,'r') as f:
     SECRET_KEY = f.read().strip()
 
